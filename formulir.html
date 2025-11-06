@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Input Data Mahasiswa </title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif; 
+            background-color: #f2f7ff;
+            color: #1e3a8a;
+        }
+        .formulir{
+            background-color: #dbeafe; 
+            width: 200px; 
+            border-radius: 10px; 
+            padding: 50px 70px; 
+            margin: 20px auto;
+            border: 1px solid #93c5fd;
+        }
+        h1 {text-align: center; margin-top: 0;}
+        button{
+            padding: 5px;
+            border-radius: 3px;
+            border: 1px solid #1e40af;
+            font-weight: bold;
+        }
+        #kirim {background-color: #1e3a8a; color: whitesmoke;}
+    </style>
+</head>
+
+<body>
+    <div class="formulir">
+    <h1> Formulir Mahasiswa </h1>
+    <form>
+        <label for="NIM"> NIM </label><br>
+        <input type="text" id="NIM" name="NIM"><br><br>
+        <label for="Nama"> Nama Lengkap </label><br>
+        <input type="text" id="Nama" name="Nama"><br><br>
+
+        <label for="Gender"> Gender </label><br>
+        <input type="radio" id="Perempuan" name="Gender" value="Perempuan">
+        <label for="Perempuan"> Perempuan </label><br>
+        <input type="radio" id="Laki-laki" name="Gender" value="Laki-laki">
+        <label for="Laki-laki"> Laki-laki</label><br><br>
+
+        <label for="Kota"> Tempat Lahir </label><br>
+        <select name="Kota" id="Kota">
+            <option value=" "> Pilih Kota </option>
+            <option value="denpasar"> Denpasar </option>
+            <option value="tabanan"> Tabanan </option>
+            <option value="gianyar"> Gianyar </option>
+            <option value="singaraja"> Singaraja </option>
+            <option value="bangli"> Bangli </option>
+            <option value="negara"> Negara </option>
+            <option value="amlapura"> Amlapura </option>
+            <option value="semarapura"> Semarapura </option>
+            <option value="mangupura"> Mangupura </option>
+            <option value="lain1"> Lain-lainnya </option>
+        </select><br><br>
+
+        <label for="tgllahir"> Tanggal Lahir </label><br>
+        <input type="date" name="tgllahir" id="tgllahir"><br><br>
+
+        <label for="Alamat"> Alamat </label><br>
+        <input type="text" name="Alamat" id="Alamat"><br><br>
+
+        <label for="nohp"> No.HP </label><br>
+        <input type="text" name="nohp" id="nohp"><br><br>
+
+        <label for="email"> Email </label><br>
+        <input type="email" name="email" id="email"><br><br>
+
+        <label for="hobi"> Hobi </label><br>
+        <select name="hobi" id="hobi">
+            <option value=""> Pilih Hobi </option>
+            <option value="menggambar"> Menggambar </option>
+            <option value="melukis"> Melukis </option>
+            <option value="menyanyi"> Menyanyi </option>
+            <option value="menari"> Menari </option>
+            <option value="maingame"> Main Game </option>
+            <option value="membaca"> Membaca </option>
+            <option value="berenang"> Berenang </option>
+            <option value="memasak"> Memasak</option>
+            <option value="lain2"> Lain-lainnya </option>
+        </select> <br><br>
+
+        <button id="kirim"> Kirim </button>
+    </form> 
+    </div>
+
+</body>
+</html>
